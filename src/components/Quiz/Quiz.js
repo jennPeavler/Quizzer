@@ -4,7 +4,7 @@ export class Quiz extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      
+
     }
   }
 
@@ -23,9 +23,6 @@ export class Quiz extends Component {
                       <div className='answers' key={j}>
                         <input type='radio'
                                name={question.id}
-                               onClick={event => {
-                                 this.submitAnswer(answer.score, question.id)
-                               }}
                         />
                           {answer.title}<br />
                       </div>
