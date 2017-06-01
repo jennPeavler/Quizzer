@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import QuizDisplayContainer from '../QuizDisplay/QuizDisplayContainer'
+import ApiAdders from '../ApiAdders/ApiAdders'
 import { apiCall } from '../../helpers/apiCalls'
 
 class App extends Component {
@@ -23,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Welcome To Quizzer</h1>
-      
+        <ApiAdders />
         <QuizDisplayContainer />
       </div>
     );
