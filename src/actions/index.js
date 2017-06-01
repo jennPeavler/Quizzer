@@ -1,8 +1,3 @@
-export const addUser = () => {
-  return {
-    type: 'ADD_USER'
-  }
-}
 
 export const fetchQuizzes = (response) => {
   return {

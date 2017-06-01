@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Users from '../../containers/Users'
+
 import QuizDisplayContainer from '../QuizDisplay/QuizDisplayContainer'
 import { apiCall } from '../../helpers/apiCalls'
 
@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Welcome To Quizzer</h1>
-        <Users />
+      
         <QuizDisplayContainer />
       </div>
     );
