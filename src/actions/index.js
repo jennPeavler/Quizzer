@@ -5,3 +5,10 @@ export const fetchQuizzes = (response) => {
     payload: response
   }
 }
+
+export const addQuestion = (response) => {
+  return {
+    type: 'ADD_QUESTION',
+    payload: response
+  }
+}
