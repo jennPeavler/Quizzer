@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { apiCall } from '../../helpers/apiCalls'
 
 export default class ApiAdders extends Component {
   constructor(props) {
@@ -21,7 +22,14 @@ export default class ApiAdders extends Component {
       body: bodyContent
     })
     .then(response => response.json())
-    .then(jresponse => console.log(jresponse))
+    .then(() => {
+      const quizPath = 'quizzes'
+
+      apiCall(quizPath)
+      .then(data => {
+        this.props.fetchQuizzes(data)
+      })
+    })
     .catch(err => console.log(err))
   }
 
